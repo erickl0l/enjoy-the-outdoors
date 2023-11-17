@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Jaldi', sans-serif;
+    font-weight: 1000;
+}
+nav {
+    box-shadow: 0 7px 4px 0px rgba(0,0,0,.2);
+    padding: 0;
+    margin: 0;
+  }
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px;
+    margin-left: 404px;
+}
+.nationalparks {
+    text-decoration: none;
+    color: black;
+}
+.mountains {
+    text-decoration: none;
+    color: black;
+}
+.home {
+    text-decoration: none;
+    color: black;
+}
+.logo {
+    width: 200px;
+    margin-left: 870px;
+    margin-top: 10px;
+}
