@@ -1,0 +1,47 @@
+#home-container {
+    text-align: center;
+    margin-top: 50px; /* Adjust as needed */
+}
+
+#home-container h1 {
+    color:#575C0E;
+}
+
+#home-container p {
+    color: #D69723;
+    font-size: 18px;
+}
+#park-dropdown {
+    padding: 5px;
+    font-size: 16px;
+}
+#info-box {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#info-box h3 {
+    color: #333;
+}
+
+#park-description {
+    margin-bottom: 10px;
+}
+
+#park-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+footer {
+    background-color: #575C0E;;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

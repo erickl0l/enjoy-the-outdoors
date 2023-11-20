@@ -5,18 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MountainsByViewPoint</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/mystyles.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/mountains.css">
 </head>
 <body>
-    <nav class="fixed-top">
-        <div class="container-fluid">
-            <a href="./index.html"><img class="logo" src="./images/viewpoint.png" alt="logo"></a>
-            <ul>
-                <li><a class="mountains" href="mountains.html">Mountains</a></li>
-                <li><a class="home" href="index.html">Home</a></li>
-                <li><a class="nationalparks" href="nationalparks.html">National Parks</a></li>
-            </ul>
-          </div>
-    </nav>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Jaldi&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+
+    <header class="header">
+        <a href="index.html" class="logo"><img src="./images/viewpoint.png" width=200></a>
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="mountains.html">Mountains</a>
+          <a href="nationalparks.html">National Parks</a>
+        </nav>
+      </header>
+
+      <main>
+        <div id="home-container">
+            <h1>Welcome to View Point</h1>
+            <p>Discover the beauty of nature with our National Parks and Mountains guide.</p>
+        </div>
+
+        <section id="search-section">
+            <h2>Mountains Search</h2>
+            <label for="mountains-dropdown">Select a Mountains:</label>
+            <select id="mountains-dropdown">
+                <option value="all">Mountains Type</option>
+                
+            </select>
+            <button onclick="searchMountains()">Search</button>
+        </section>
+
+        <h2>Search Results</h2>
+        <ul id="mountains-list">
+            
+        </ul>
+        
+        <div id="info-box">
+            <h3> Mountains Information</h3>
+            <div id="mountains-description"></div>
+            <img id="mountains-image" src="" alt="Mountains Image"> 
+    </main>
+
+    <footer>
+        <p>&copy; 2023 View Point Inc.</p>
+    </footer>
+
+    <script src="mountains.html"></script>
 </body>
 </html>
