@@ -32,29 +32,23 @@
             <p>Discover the beauty of nature with our National Parks and Mountains guide.</p>
         </div>
 
-        <section id="search-section">
-            <h2>Parks Search</h2>
-            <label for="park-dropdown">Select a Park:</label>
-            <select id="park-dropdown">
-                <option value="all">Select a Location</option>
-                
-            </select>
-            <select id="park-dropdown">
-                <option value="all">All Parks</option>
-                
-            </select>
-            <button onclick="searchParks()">Search</button>
-        </section>
+<section id="search-section">
+    <h2>National Parks Search</h2>
+    
+    <label for="location-dropdown">Search by Location:</label>
+    <select id="locationsArray">
 
-        <h2>Search Results</h2>
-        <ul id="park-list">
-            
-        </ul>
-        
-        <div id="info-box">
-            <h3>Park Information</h3>
-            <div id="park-description"></div>
-            <img id="park-image" src="" alt="Park Image"> 
+    </select>
+    <button onclick="searchParks()">Search</button>
+    
+    <label for="park-type-dropdown">Search by Park Type:</label>
+    <select id="park-type-dropdown">
+    </select>
+
+    <button onclick="searchParks()">Search</button>
+</section>
+
+
     </main>
 
     <footer>
@@ -62,6 +56,7 @@
     </footer>
 
     <script src="nationalParkData.js"></script>
+    <script src="./scripts/parkTypeData.js"></script>
 
 </body>
 </html>
