@@ -18,7 +18,7 @@
 
 
     <header class="header">
-        <a href="index.html" class="logo"><img src="./images/viewpoint.png" width=200></a>
+        <a href="index.html" class="logo"><img src="./images-2/viewpoint.png" alt="logo" width=200></a>
         <nav class="navbar">
           <a href="index.html">Home</a>
           <a href="mountains.html">Mountains</a>
@@ -30,24 +30,21 @@
         <div id="home-container">
             <h1>Welcome to View Point</h1>
             <p>Discover the beauty of nature with our National Parks and Mountains guide.</p>
-        </div>
 
 <section id="search-section">
     <h2>National Parks Search</h2>
     
-    <label for="location-dropdown">Search by Location:</label>
-    <select id="locationsArray">
-
-    </select>
-    <button onclick="searchParks()">Search</button>
-    
-    <label for="park-type-dropdown">Search by Park Type:</label>
-    <select id="park-type-dropdown">
-    </select>
-
-    <button onclick="searchParks()">Search</button>
+    <div class="dropdown">
+        <select id="locationsList" class="styled-select">
+            <option value="">Select a Location:</option>
+        </select>
+        <select id="parkTypeList" class="styled-select">
+            <option value="">Select a Park Type:</option>
+        </select>
+        <div id="results"><p>Results</p></div>
+    </div>
 </section>
-
+        </div>
 
     </main>
 
@@ -55,8 +52,35 @@
         <p>&copy; 2023 View Point Inc.</p>
     </footer>
 
-    <script src="nationalParkData.js"></script>
     <script src="./scripts/parkTypeData.js"></script>
+    <script src="./scripts/nationalParkData.js"></script>
+    <script src="./scripts/locationData.js"></script>
+    <script>
+    locationsArray.forEach(s=>locationsList.innerHTML += `<option>${s}</option>`)
+    parkTypesArray.forEach(s=>parkTypeList.innerHTML += `<option>${s}</option>`)
+    function draw(){
+        results.innerHTML=""
+        nationalParksArray.forEach(p => {
+    if (p.State === locationsList.value && p.LocationName.includes(parkTypeList.value)) {
+        results.innerHTML += `<div class="card">
+            <h2>${p.State}</h2>
+            <p>${p.LocationName}</p>
+            <h3>ZipCode-${p.ZipCode}</h3>
+            <h3>Phone:${p.Phone}</h3>
+            <h3>Fax:${p.Fax}</h3>
+            <h3>Latitude:${p.Latitude}</h3>
+            <h3><a href="https://www.google.com/maps?q=${p.Latitude},${p.Longitude}" target="_blank">View on Google Maps</a><h3>
+            </div>`;
+    }
+});
+    }
+    draw()
+        parkTypeList.onchange=draw
+        locationsList.onchange=draw
+            
+  
+    </script>
+    
 
 </body>
 </html>

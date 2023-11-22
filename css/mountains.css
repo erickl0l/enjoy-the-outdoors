@@ -11,31 +11,12 @@
     color: #D69723;
     font-size: 18px;
 }
-#mountains-dropdown {
-    padding: 5px;
-    font-size: 16px;
-}
-#info-box {
-    background-color: #f2f2f2;
-    padding: 20px;
-    border-radius: 8px;
-    margin-top: 20px;
+
+#home-container h2 {
+    color:#575C0E;
+    font-size: 40px;
 }
 
-#info-box h3 {
-    color: #333;
-}
-
-#mountains-description {
-    margin-bottom: 10px;
-}
-
-#mountains-image {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
 footer {
     background-color: #575C0E;;
     color: white;

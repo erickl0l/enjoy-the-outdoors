@@ -10,7 +10,7 @@ const nationalParksArray = [
     Fax: "(270) 358-3874",
     Latitude: 37.535671,
     Longitude: -85.7340637,
-    Location: {
+    Location : {
         coordinates: [
         -85.7340637,
         37.535671
